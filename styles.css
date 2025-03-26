@@ -1,0 +1,101 @@
+/* Style for the displayed tag */
+.twitter-tagger-tag {
+  padding: 1px 4px;
+  margin-left: 5px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  cursor: pointer; /* Make it look clickable */
+  display: inline-block; /* Prevent wrapping issues */
+  -webkit-user-select: none; /* Prevent text selection on click */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Style for the tag button */
+.twitter-tagger-button {
+  vertical-align: middle;
+  margin-left: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 1px 3px;
+  background-color: #eee;
+}
+
+/* --- Modal Styles --- */
+#twitter-tagger-modal {
+  position: fixed; /* Fixed position relative to viewport */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10000; /* Ensure it's on top */
+  font-family: sans-serif;
+  font-size: 14px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+#twitter-tagger-modal label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+#twitter-tagger-modal input[type="text"],
+#twitter-tagger-modal select,
+#twitter-tagger-modal textarea {
+  width: calc(100% - 12px); /* Adjust width considering padding */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#twitter-tagger-modal textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+#twitter-tagger-modal .modal-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  flex-wrap: wrap; /* Allow wrapping on small modal */
+}
+
+#twitter-tagger-modal button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px; /* Add some margin around buttons */
+}
+
+#twitter-tagger-modal button.save {
+  background-color: #d4edda; /* Light green */
+  border-color: #c3e6cb;
+}
+
+#twitter-tagger-modal button.delete {
+  background-color: #f8d7da; /* Light red */
+  border-color: #f5c6cb;
+  margin-left: auto; /* Push delete to the right */
+}
+
+#twitter-tagger-modal button.source {
+  background-color: #cce5ff; /* Light blue */
+  border-color: #b8daff;
+}
+
+#twitter-tagger-modal button.close {
+  background-color: #e2e3e5; /* Light grey */
+  border-color: #d6d8db;
+}
